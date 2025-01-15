@@ -6,7 +6,7 @@ jobs:
 
   publish-hello-docker-image:
     runs-on: ubuntu-latest
-    permission:
+    permissions:
       contents: read
       packages: write
       attestations: write
