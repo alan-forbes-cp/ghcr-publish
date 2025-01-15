@@ -1,6 +1,12 @@
 name: publish docker images
 
-on: [push]
+on:
+  push:
+    branches:
+    - master
+    paths:
+    - 'github/workflows/publish_docker_images.yml'
+    - 'github/dockerfiles/**'
 
 jobs:
 
