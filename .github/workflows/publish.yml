@@ -16,7 +16,7 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build the hello-docker Docker image
-        run: |
-          docker build . --tag ghcr.io/alan-forbes-cp/hello-docker-gcr-demo:latest
-          docker run ghcr.io/alan-forbes-cp/hello-docker-gcr-demo:latest
-          docker push ghcr.io/alan-forbes-cp/hello-docker-gcr-demo:latest
+      run: |
+        docker build . --tag ghcr.io/alan-forbes-cp/hello-docker-gcr-demo:latest
+        docker run ghcr.io/alan-forbes-cp/hello-docker-gcr-demo:latest
+        docker push ghcr.io/alan-forbes-cp/hello-docker-gcr-demo:latest
